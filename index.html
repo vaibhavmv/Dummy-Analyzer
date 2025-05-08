@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Review Detection</title>
+    <link rel="stylesheet" href="style.css">
+    "
+</head>
+<body>
+    <div class="container">
+        <h1>Fake Review Detection</h1>
+        <div class="input-section">
+            <h2>Review Input</h2>
+            <label for="reviewText">Review Text:</label>
+            <textarea id="reviewText" placeholder="Enter review text here"></textarea>
+        </div>
+        <div class="input-section">
+            <h2>Image Upload</h2>
+            <label for="reviewImage">Upload Image:</label>
+            <input type="file" id="reviewImage" accept="image/*">
+            <div id="imagePreview"></div>
+        </div>
+        <button id="detectButton">Detect Fake Review</button>
+        <div id="resultSection" class="hidden">
+            <h2>Detection Result</h2>
+            <p id="detectionResult"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
